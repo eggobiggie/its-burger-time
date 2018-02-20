@@ -1,0 +1,18 @@
+body {
+    background-color: #ffffe0;
+}
+
+#burgerImage {
+    height: 300px;
+    margin-left: 30px;
+}
+
+#burgerTitle {
+    font-family: 'Anton', sans-serif;
+    /* font-family: 'Londrina Shadow', cursive; */
+    margin-top: -80px;
+}
+
+#addButton {
+    margin-top: -80px;
+}

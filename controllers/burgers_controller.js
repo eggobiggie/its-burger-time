@@ -3,4 +3,16 @@ var burger = require("../models/burger.js");
 
 var router = express.Router();
 
-//Create Router and export at end of file
+var burger = require("../models/burger.js");
+
+router.get("/", function(req, res) {
+    burger.selectAll(function(data) {
+        var hbsObject = {
+            burger: data
+        };
+        console.log(hbsObject);
+        res.render("index", hbsObject);
+    });
+});
+
+module.exports = router;
