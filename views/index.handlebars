@@ -8,7 +8,21 @@
     </div>
     <div class="row">
         <div class="col s12">
-            <h1 class="center-align" id="burgerTitle">IT'S BURGER TIME</h1>
+            <h2 class="center-align" id="burgerTitle">IT'S BURGER TIME</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s5">
+            <ul class="center-align">
+                {{#each burger}}
+                    <li>{{ this.burger_name }}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col s5 offset-s1">
+            <ul class="center-align">
+                <li>Borger</li>
+            </ul>
         </div>
     </div>
     <div class="row">
@@ -16,7 +30,7 @@
             <div class="row">
                 <div class="input-field col s6">
                     <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Add Burger</label>
+                    <label for="textarea1">ADD BURGER</label>
                 </div>
             </div>
         </form>
@@ -24,8 +38,13 @@
     <div class="row">
         <div class="col s12">
             <div class="center-align">
-            <a class="waves-effect waves-light red lighten-1 btn" id="addButton">Add</a>
+            <a class="waves-effect waves-light red lighten-1 btn" id="addButton"><span id="buttonText">Add</span></a>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <p class="center-align">Enter a burger you want to eat and click the "add" button</p>
         </div>
     </div>
 </div>

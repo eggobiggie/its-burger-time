@@ -3,16 +3,46 @@ body {
 }
 
 #burgerImage {
-    height: 300px;
+    height: 250px;
     margin-left: 30px;
 }
 
 #burgerTitle {
-    font-family: 'Anton', sans-serif;
-    /* font-family: 'Londrina Shadow', cursive; */
-    margin-top: -80px;
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-weight: bold;
+    margin-top: -70px;
 }
 
 #addButton {
     margin-top: -80px;
+}
+
+ul {
+    margin-top: -30px;
+}
+
+li {
+    font-size: 35px;
+    padding: 15px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #EF5350;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+
+#buttonText {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label,
+p {
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+
+p {
+    font-size: 30px;
+    margin-top: -40px;
 }
