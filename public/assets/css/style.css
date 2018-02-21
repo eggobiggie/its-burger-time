@@ -22,13 +22,32 @@ ul {
     margin-top: -30px;
 }
 
-li {
+.burgerList {
     font-size: 35px;
     padding: 15px 10px;
     margin: 10px;
     border-radius: 5px;
     background-color: #EF5350;
     font-family: 'Sue Ellen Francisco', cursive;
+}
+
+.buttonUl {
+    margin-top: -25px;
+}
+
+.buttonList {
+    font-size: 35px;
+    padding: 15px 10px;
+    margin: 2px;
+    margin-left: -30px;
+    border-radius: 5px;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+
+#devourButton {
+    height: 60px;
+    padding-top: 15px;
+    font-size: 40px;
 }
 
 #buttonText {
