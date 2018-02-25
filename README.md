@@ -2,6 +2,8 @@
 
 ![Image of Burger Time Page](./public/assets/images/itsburgertime.png)
 
+* It's Burger Time can be found [here](https://serene-dawn-31673.herokuapp.com/)
+
 * In this app, the user can add new, devour, or delete burgers.
 
 * The burgers are held in a mySQL database that contains an id, the burger name, and whether or not the burger has been devoured. The devoured column is a boolean with a default of false. 
