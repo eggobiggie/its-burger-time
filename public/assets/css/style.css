@@ -31,10 +31,11 @@ ul {
     font-family: 'Sue Ellen Francisco', cursive;
 }
 
-#devourButton {
+.burgerList > .devourButton {
     height: 60px;
-    padding-top: 15px;
-    font-size: 40px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 30px;
 }
 
 #buttonText {
