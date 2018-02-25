@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 
+//Connection for local SQL database
 // var connection = mysql.createConnection({
 //     port: 8889,
 //     host: "localhost",
@@ -8,6 +9,7 @@ var mysql = require("mysql");
 //     database: "burger_db"
 // });
 
+//Connection for Heroku/SQL Database
 var connection;
 if(process.env.JAWSDB_URL) {
   //Heroku deployment
