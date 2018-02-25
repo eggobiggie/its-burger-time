@@ -15,20 +15,19 @@
         <div class="col s5">
             <ul class="center-align">
                 {{#each burger}}
-                    <li class="burgerList z-depth-2">{{ this.burger_name }}</li>
-                {{/each}}
-            </ul>
-        </div>
-        <div class="col s1">
-            <ul class="center-align buttonUl">
-                {{#each burger}}
-                    <li class="buttonList"><a class="waves-effect waves-light light-green btn z-depth-2" id="devourButton">DEVOUR</a></li>
+                    {{#unless devoured}}
+                        {{> burgers/burgers-block devoured=false}}
+                    {{/unless}}
                 {{/each}}
             </ul>
         </div>
         <div class="col s5 offset-s1">
             <ul class="center-align">
-                <li class="burgerList z-depth-2">Borger</li>
+                {{#each burger}}
+                    {{#if devoured}}
+                        {{> burgers/burgers-block devoured=true}}
+                    {{/if}}
+                {{/each}}
             </ul>
         </div>
     </div>
