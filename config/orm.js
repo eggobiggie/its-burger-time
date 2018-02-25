@@ -33,18 +33,19 @@ var orm = {
             }
             callback(result);
         });
-    }
-    // deleteOne: function(table, condition, callback) {
-    //     var queryString = "DELETE FROM " + table;
-    //     queryString += " WHERE ";
-    //     queryString += condition;
-    //     connection.query(queryString, function(err, result) {
-    //       if (err) {
-    //         throw err;
-    //       }
-    //       callback(result);
-    //     });
-    //   }
+    },
+    deleteOne: function(table, condition, callback) {
+        var queryString = "DELETE FROM " + table + " WHERE " + condition;
+
+        console.log(queryString);
+
+        connection.query(queryString, function(err, result) {
+          if (err) {
+            throw err;
+          }
+          callback(result);
+        });
+      }
 };
 
 // Export the ORM object in module.exports.

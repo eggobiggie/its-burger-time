@@ -40,9 +40,17 @@ router.put("/api/burgers/:id", function(req, res) {
     });
 });
 
-// router.delete("/api/burgers/:id", function(req, res) {
-//     burger.deleteOne;
-// });
+router.delete("/api/burgers/:id", function(req, res) {
+    var condition = "id = " + req.params.id.substr(1);
+
+    burger.deleteOne(condition, function(result) { 
+        if (result.affectedRows == 0) {
+            return res.status(409).end();
+        } else {
+            res.status(200).end();
+        }
+    });
+});
   
 
 module.exports = router;

@@ -1,7 +1,6 @@
 $(function() {
     $(".devourButton").on("click", function(event) {
         var id = $(this).data("id");
-        // var newDevour = $(this).data("newdevoured");
 
         var newDevourState = {
             devoured: true
@@ -31,6 +30,18 @@ $(function() {
         }).then(
             function() {
                 console.log("Created new burger");
+                location.reload();
+            }
+        );
+    });
+    $(".deleteButton").on("click", function(event) {
+        var id = $(this).data("id");
+
+        $.ajax("api/burgers/:" + id, {
+            type: "DELETE"
+        }).then(
+            function() {
+                console.log("Deleted Burger", id);
                 location.reload();
             }
         );
